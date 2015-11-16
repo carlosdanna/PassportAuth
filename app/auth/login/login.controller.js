@@ -12,7 +12,7 @@
 			AuthServices.Login(vm.user).then(function(data){
 				console.log(data);
 				if(data != 'Unauthorized'){
-					//$state.go('profile');
+					$state.go('dashboard');
 				}else{
 					$state.go('login',{},{reload: true});
 				}
